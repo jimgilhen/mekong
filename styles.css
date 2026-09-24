@@ -90,7 +90,7 @@ header.site-head .wrap {
 
 .site-tagline {
   font-family: 'EB Garamond', Georgia, serif;
-  font-style: italic;
+  font-style: normal;
   font-size: 1.15rem;
   color: var(--text-muted);
   margin: 0;
