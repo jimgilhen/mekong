@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact &mdash; Mekong Food Integrity and Compliance Associates</title>
+<meta name="description" content="Contact Mekong Food Integrity and Compliance Associates for pre-shipment audits and compliance oversight.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-head">
+  <div class="wrap">
+    <div class="brand-name"><a href="index.html">Mekong Food Integrity and Compliance Associates LLC</a></div>
+    <nav class="site-nav">
+      <a href="index.html">Services</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" class="current">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <div class="page-intro">
+    <h1>Contact</h1>
+  </div>
+
+  <p class="confidential-note">All inquiries and findings are treated as strictly confidential.</p>
+
+  <!--
+    This form posts to Formspree, a free service that emails submissions
+    straight to your inbox (a plain HTML page has no backend of its own).
+    1. Create a free account at https://formspree.io
+    2. Create a new form and copy the endpoint it gives you
+       (looks like https://formspree.io/f/xxxxxxxx)
+    3. Replace YOUR_FORM_ID below with that ID
+  -->
+  <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="message">Message</label>
+    <textarea id="message" name="message" required></textarea>
+
+    <button class="btn" type="submit">Send message</button>
+  </form>
+
+  <div class="emergency-block">
+    <p>Have an emergency? Reach out immediately on Signal or WhatsApp.</p>
+    <div class="qr-row">
+      <div class="qr-item">
+        <!-- Replace this placeholder with your Signal QR code image, e.g. <img src="signal-qr.png" alt="Signal QR code" width="120" height="120"> -->
+        <div class="qr-box">Signal QR code placeholder</div>
+        <div class="qr-label">Signal</div>
+      </div>
+      <div class="qr-item">
+        <!-- Replace this placeholder with your WhatsApp QR code image, e.g. <img src="whatsapp-qr.png" alt="WhatsApp QR code" width="120" height="120"> -->
+        <div class="qr-box">WhatsApp QR code placeholder</div>
+        <div class="qr-label">WhatsApp</div>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    Mekong Food Integrity &amp; Compliance Associates, a Wyoming limited liability company.
+  </div>
+</footer>
+
+</body>
+</html>
