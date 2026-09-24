@@ -120,7 +120,7 @@ nav.site-nav a.current {
 .page-intro {
   max-width: 760px;
   margin: 0 auto;
-  padding: 40px 28px 16px;
+  padding: 36px 28px 16px;
 }
 
 .page-intro h1 {
@@ -129,13 +129,13 @@ nav.site-nav a.current {
 
 /* Main Content & Sections */
 main {
-  padding-bottom: 60px;
+  padding-bottom: 24px;
 }
 
 section.block {
   max-width: 760px;
   margin: 0 auto;
-  padding: 36px 28px;
+  padding: 32px 28px;
   border-top: 1px solid var(--border);
 }
 
@@ -155,43 +155,52 @@ section.block p {
 
 section.block p:last-child { margin-bottom: 0; }
 
+/* Lede styling (clean, no left border) */
 .lede {
   max-width: 760px;
   margin: 0 auto;
-  padding: 40px 28px 16px;
+  padding: 36px 28px 16px;
   font-family: 'EB Garamond', Georgia, serif;
   font-size: 1.4rem;
   color: var(--navy);
   line-height: 1.45;
-  border-left: 3px solid var(--accent);
 }
 
-/* Services list */
-.service-item {
-  margin-bottom: 28px;
+/* Services bulleted list formatting */
+section.block ul {
+  margin: 0;
+  padding-left: 20px;
+  color: var(--text);
 }
 
-.service-item:last-child {
+section.block li {
+  margin-bottom: 16px;
+  line-height: 1.6;
+}
+
+section.block li:last-child {
   margin-bottom: 0;
 }
 
-.service-item h3 {
-  font-size: 1.15rem;
-  margin-bottom: 6px;
+section.block li strong {
   color: var(--navy);
+  font-family: 'EB Garamond', Georgia, serif;
+  font-size: 1.15rem;
+  display: inline-block;
+  margin-bottom: 2px;
 }
 
 /* CTA */
 .cta-block {
   max-width: 760px;
   margin: 0 auto;
-  padding: 40px 28px;
+  padding: 16px 28px 24px;
 }
 
 .cta-block .inner {
   background: var(--navy);
   color: #FAF9F5;
-  padding: 36px 36px;
+  padding: 28px 32px;
   border-radius: 2px;
   box-shadow: 0 6px 24px rgba(18, 28, 38, 0.12);
 }
@@ -204,7 +213,7 @@ section.block p:last-child { margin-bottom: 0; }
 
 .cta-block p {
   color: #D0D4DC;
-  margin: 0 0 24px;
+  margin: 0 0 20px;
   max-width: 50ch;
 }
 
@@ -226,11 +235,11 @@ section.block p:last-child { margin-bottom: 0; }
   border-bottom: none;
 }
 
-/* About page headshot & text wrap */
+/* About page headshot & text wrap (pushed right to the top) */
 .about-content {
   max-width: 760px;
   margin: 0 auto;
-  padding: 20px 28px 36px;
+  padding: 32px 28px 24px;
 }
 
 .about-headshot {
@@ -239,12 +248,12 @@ section.block p:last-child { margin-bottom: 0; }
   height: 210px;
   object-fit: cover;
   border-radius: 2px;
-  margin: 6px 28px 16px 0;
+  margin: 4px 28px 16px 0;
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
 .about-bio-intro {
-  overflow: hidden; /* Clearfix for the floated image */
+  overflow: hidden;
 }
 
 .about-bio-intro h2 {
@@ -267,7 +276,7 @@ section.block p:last-child { margin-bottom: 0; }
   font-weight: 700;
 }
 
-/* Contact page */
+/* Contact page - strict left alignment & button fix */
 .confidential-note {
   max-width: 760px;
   margin: 0 auto;
@@ -280,6 +289,9 @@ form.contact-form {
   max-width: 760px;
   margin: 0 auto;
   padding: 12px 28px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 form.contact-form label {
@@ -288,6 +300,8 @@ form.contact-form label {
   color: var(--text-muted);
   margin-bottom: 6px;
   font-weight: 700;
+  width: 100%;
+  max-width: 520px;
 }
 
 form.contact-form input,
@@ -309,10 +323,14 @@ form.contact-form textarea {
   resize: vertical;
 }
 
+form.contact-form .btn {
+  margin-top: 4px;
+}
+
 .emergency-block {
   max-width: 760px;
   margin: 0 auto;
-  padding: 40px 28px 20px;
+  padding: 36px 28px 20px;
   border-top: 1px solid var(--border);
 }
 
@@ -350,8 +368,8 @@ form.contact-form textarea {
 /* Footer */
 footer.site-foot {
   border-top: 1px solid var(--border);
-  padding: 28px 0 36px;
-  margin-top: 40px;
+  padding: 20px 0 24px;
+  margin-top: 16px;
 }
 
 footer.site-foot .wrap {
@@ -360,7 +378,6 @@ footer.site-foot .wrap {
   color: var(--text-muted);
 }
 
-/* Responsive breakpoint for float image */
 @media (max-width: 640px) {
   .about-headshot {
     float: none;
