@@ -1,404 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mekong Quality Assurance Advisory</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <p class="brand">Mekong Quality Assurance Advisory</p>
+    <p class="tag">Product specifications and on-site verification for food &amp; beverage brands using co-packers.</p>
+    <nav aria-label="Main">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="services.html">Services</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
 
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Lato:wght@400;700&display=swap');
+<main class="wrap">
+  <div class="hero">
+    <h1>Defining the spec. Verifying the run.</h1>
+    <p class="lede">A bad batch rarely starts with a bad factory. It starts with a loose spec sheet.</p>
+    <div class="prose">
+      <p>In overseas food and beverage manufacturing, the gap between the sample you approved and the product that arrives usually traces back to the contract specification. Where a spec relies on vague language, both sides fill the gaps with their own assumptions, and you only find out when the first commercial run lands.</p>
+      <p>Mekong QA Advisory closes that gap, whether you are establishing specs before your first run or retrofitting detailed Schedules A &amp; B onto an existing co-packer contract when quality issues arise. We write the objective technical standards and verify compliance directly on the factory floor, giving you full leverage over your production and capital.</p>
+      <div class="sig"><strong>Jamie Gilhen</strong><span>Principal &amp; Lead QA Specialist, Mekong Region</span></div>
+    </div>
+  </div>
 
-:root {
-  --navy: #121C26;
-  --bg: #FCFCFA;
-  --accent: #9E4735;
-  --accent-hover: #7E3728;
-  --text: #1A1D20;
-  --text-muted: #5B5F63;
-  --border: #E4E1D8;
-}
+  <section aria-labelledby="core">
+    <h2 id="core">Core services</h2>
+    <div class="cols">
+      <article class="card">
+        <h3><a href="services.html#architecture">Co-Packer QA Architecture</a></h3>
+        <p>Translating your benchtop recipe into an unshakeable commercial spec without losing its culinary integrity. Backed by Red Seal culinary training and formal QA certification, I lock in your exact flavor, aroma, and mouthfeel alongside rigorous technical standards. Schedule A covers pH, Brix, moisture, viscosity, and fill weights. Schedule B covers sampling and hold-release protocols. The plant can then replicate your recipe at mass scale without compromise.</p>
+        <dl><dt>Where</dt><dd>Remote, anywhere</dd><dt>Pricing</dt><dd>Quoted per project</dd></dl>
+      </article>
+      <article class="card">
+        <h3><a href="services.html#verification">Fractional QA Verification</a></h3>
+        <p>Ongoing in-person plant oversight to prevent flavor drift, texture breakdown, and line corruption over time. Combining a trained chef’s palate with strict plant-floor auditing, I conduct regular on-site checks at your co-packer to ensure commercial runs match your approved benchmark.</p>
+        <dl><dt>Where</dt><dd>On-site, Mekong region and Southeast Asia</dd><dt>Pricing</dt><dd>Retainers starting at $2,000 per month</dd></dl>
+      </article>
+      <article class="card">
+        <h3><a href="services.html#inspections">Inspections &amp; Factory Visits</a></h3>
+        <p>A targeted, single-event line audit, line-trial evaluation, or pre-shipment inspection on the factory floor. I evaluate your finished pallets directly against your approved Golden Sample and Schedule A specs, verifying both culinary character and strict technical compliance before final capital is released.</p>
+        <dl><dt>Where</dt><dd>On-site, Southeast Asia</dd><dt>Pricing</dt><dd>All-inclusive packages across the Mekong region: travel and logistics bundled into one fee, with no line items to expense.</dd></dl>
+      </article>
+    </div>
+  </section>
 
-* { box-sizing: border-box; }
+  <section aria-labelledby="pipe">
+    <h2 id="pipe">The 3-stage production control pipeline</h2>
+    <p class="intro">End-to-end quality control, or mid-stream crisis triage. Start at Stage 1 for a new product, or step in at Stage 2 or 3 to triage an active production issue or hold an out-of-spec batch. Strict financial and technical gates protect your capital at every phase.</p>
+    <div class="cols">
+      <article class="card stage">
+        <h3><small>Stage 1</small>Line trial</h3>
+        <p class="run">Micro-run, about 500–1,000 units</p>
+        <ul><li>Run on actual commercial factory machinery.</li><li>Air-freight samples to the founder and QA architect.</li><li>Adjust process specs; sign 3 Golden Samples.</li></ul>
+        <div class="gate"><b>Risk gate 1</b>Commercial deposits and raw material purchases stay frozen until Golden Sample sign-off.</div>
+      </article>
+      <article class="card stage">
+        <h3><small>Stage 2</small>Commercial scale</h3>
+        <p class="run">Mass batch, 20,000+ units</p>
+        <ul><li>Full batch produced using locked Stage 1 parameters.</li><li>Finished pallets wrapped and held at the factory site.</li></ul>
+        <div class="gate"><b>Risk gate 2</b>Container loading blocked. Balance payment withheld pending audit.</div>
+      </article>
+      <article class="card stage">
+        <h3><small>Stage 3</small>Pre-shipment audit</h3>
+        <p class="run">Floor sampling and release</p>
+        <ul><li>Random sampling off warehouse pallets.</li><li>Audited against Schedule A and Golden Sample targets.</li></ul>
+        <div class="gate"><b>Risk gate 3</b>Final payment released and container sealed only upon an official PSI pass report.</div>
+      </article>
+    </div>
+  </section>
 
-html { scroll-behavior: smooth; }
+  <section style="border-top:0;padding-top:0">
+    <div class="cta">
+      <h2>Not sure your current specs would hold up, or dealing with an active production issue right now?</h2>
+      <p>Book a call, or send me your Schedule A and B (or your current spec sheet) and I’ll show you where they leave room for guesswork.</p>
+      <div class="btns"><a class="btn p" href="contact.html">Book a call</a><a class="btn s" href="contact.html">Send me your specs</a></div>
+    </div>
+  </section>
+</main>
 
-body {
-  margin: 0;
-  background: var(--bg);
-  color: var(--text);
-  font-family: 'Lato', -apple-system, sans-serif;
-  font-size: 17px;
-  line-height: 1.7;
-  -webkit-font-smoothing: antialiased;
-  border-top: 4px solid var(--navy);
-}
-
-h1, h2, h3 {
-  font-family: 'EB Garamond', Georgia, serif;
-  font-weight: 500;
-  color: var(--navy);
-  line-height: 1.2;
-  margin: 0;
-}
-
-a {
-  color: var(--accent);
-  text-decoration: none;
-  border-bottom: 1px solid transparent;
-  transition: border-color 0.2s ease;
-}
-
-a:hover, a:focus {
-  border-bottom-color: var(--accent);
-}
-
-a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible {
-  outline: 2px solid var(--accent);
-  outline-offset: 3px;
-}
-
-.wrap {
-  max-width: 760px;
-  margin: 0 auto;
-  padding: 0 28px;
-}
-
-/* Masthead / Header */
-header.site-head {
-  border-bottom: 1px solid var(--border);
-  background: var(--bg);
-  padding: 36px 0 24px;
-}
-
-header.site-head .wrap {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-.brand-container {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-}
-
-.brand-name {
-  font-family: 'EB Garamond', Georgia, serif;
-  font-size: 1.8rem;
-  font-weight: 600;
-  letter-spacing: -0.01em;
-  line-height: 1.15;
-}
-
-.brand-name a {
-  color: var(--navy);
-  border-bottom: none;
-}
-
-.site-tagline {
-  font-family: 'EB Garamond', Georgia, serif;
-  font-style: normal;
-  font-size: 1.15rem;
-  color: var(--text-muted);
-  margin: 0;
-}
-
-nav.site-nav {
-  margin-top: 8px;
-  display: flex;
-  gap: 24px;
-  font-family: 'Lato', sans-serif;
-  font-size: 0.94rem;
-}
-
-nav.site-nav a {
-  color: var(--text-muted);
-  padding-bottom: 4px;
-  border-bottom: 1px solid transparent;
-}
-
-nav.site-nav a.current {
-  color: var(--navy);
-  border-bottom-color: var(--accent);
-  font-weight: 700;
-}
-
-/* Page intro on inner pages */
-.page-intro {
-  max-width: 760px;
-  margin: 0 auto;
-  padding: 36px 28px 16px;
-}
-
-.page-intro h1 {
-  font-size: 2.2rem;
-}
-
-/* Main Content & Sections */
-main {
-  padding-bottom: 24px;
-}
-
-section.block {
-  max-width: 760px;
-  margin: 0 auto;
-  padding: 32px 28px;
-  border-top: 1px solid var(--border);
-}
-
-section.block:first-of-type {
-  border-top: none;
-}
-
-section.block h2 {
-  font-size: 1.4rem;
-  margin-bottom: 14px;
-}
-
-section.block p {
-  color: var(--text);
-  margin: 0 0 16px;
-}
-
-section.block p:last-child { margin-bottom: 0; }
-
-/* Lede styling */
-.lede {
-  max-width: 760px;
-  margin: 0 auto;
-  padding: 36px 28px 16px;
-  font-family: 'EB Garamond', Georgia, serif;
-  font-size: 1.4rem;
-  color: var(--navy);
-  line-height: 1.45;
-}
-
-/* Services bulleted list formatting */
-section.block ul {
-  margin: 0;
-  padding-left: 20px;
-  color: var(--text);
-}
-
-section.block li {
-  margin-bottom: 16px;
-  line-height: 1.6;
-}
-
-section.block li:last-child {
-  margin-bottom: 0;
-}
-
-section.block li strong {
-  color: var(--navy);
-  font-family: 'EB Garamond', Georgia, serif;
-  font-size: 1.15rem;
-  display: inline-block;
-  margin-bottom: 2px;
-}
-
-/* CTA */
-.cta-block {
-  max-width: 760px;
-  margin: 0 auto;
-  padding: 16px 28px 24px;
-}
-
-.cta-block .inner {
-  background: var(--navy);
-  color: #FAF9F5;
-  padding: 28px 32px;
-  border-radius: 2px;
-  box-shadow: 0 6px 24px rgba(18, 28, 38, 0.12);
-}
-
-.cta-block h2 {
-  color: #fff;
-  font-size: 1.4rem;
-  margin-bottom: 8px;
-}
-
-.cta-block p {
-  color: #D0D4DC;
-  margin: 0 0 20px;
-  max-width: 50ch;
-}
-
-.btn {
-  display: inline-block;
-  background: var(--accent);
-  color: #fff;
-  padding: 11px 24px;
-  font-family: 'Lato', sans-serif;
-  font-weight: 700;
-  font-size: 0.95rem;
-  border-radius: 2px;
-  border-bottom: none;
-  transition: background 0.2s ease;
-}
-
-.btn:hover, .btn:focus {
-  background: var(--accent-hover);
-  border-bottom: none;
-}
-
-/* About page headshot & text layout (Flexbox fix) */
-.about-content {
-  max-width: 760px;
-  margin: 0 auto;
-  padding: 36px 28px;
-  display: flex;
-  gap: 32px;
-  align-items: flex-start;
-}
-
-.about-headshot {
-  width: 210px;
-  height: 210px;
-  object-fit: cover;
-  border-radius: 2px;
-  flex-shrink: 0;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-}
-
-.about-bio-stack {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-.about-bio-stack h2 {
-  font-size: 1.8rem;
-  margin-bottom: 2px;
-}
-
-.about-bio-stack .role {
-  color: var(--text-muted);
-  font-size: 1rem;
-  margin-bottom: 4px;
-}
-
-.about-bio-stack p {
-  margin: 0;
-  color: var(--text);
-}
-
-.linkedin-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  margin-top: 8px;
-  font-size: 0.95rem;
-  font-weight: 700;
-}
-
-/* Contact page - strict left alignment & button fix */
-.confidential-note {
-  max-width: 760px;
-  margin: 0 auto;
-  padding: 0 28px 16px;
-  color: var(--text-muted);
-  font-size: 0.95rem;
-}
-
-form.contact-form {
-  max-width: 760px;
-  margin: 0 auto;
-  padding: 12px 28px 0;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-form.contact-form label {
-  display: block;
-  font-size: 0.9rem;
-  color: var(--text-muted);
-  margin-bottom: 6px;
-  font-weight: 700;
-  width: 100%;
-  max-width: 520px;
-}
-
-form.contact-form input,
-form.contact-form textarea {
-  width: 100%;
-  max-width: 520px;
-  font-family: 'Lato', sans-serif;
-  font-size: 1rem;
-  padding: 11px 14px;
-  border: 1px solid var(--border);
-  border-radius: 2px;
-  background: #fff;
-  color: var(--text);
-  margin-bottom: 20px;
-}
-
-form.contact-form textarea {
-  min-height: 130px;
-  resize: vertical;
-}
-
-form.contact-form .btn {
-  margin-top: 4px;
-}
-
-.emergency-block {
-  max-width: 760px;
-  margin: 0 auto;
-  padding: 36px 28px 20px;
-  border-top: 1px solid var(--border);
-}
-
-.qr-row {
-  display: flex;
-  gap: 28px;
-  margin-top: 16px;
-  flex-wrap: wrap;
-}
-
-.qr-item {
-  text-align: left;
-}
-
-.qr-item .qr-box {
-  width: 110px;
-  height: 110px;
-  border: 1px solid var(--border);
-  background: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--text-muted);
-  font-size: 0.75rem;
-  text-align: center;
-  padding: 8px;
-}
-
-.qr-item .qr-label {
-  margin-top: 6px;
-  font-size: 0.88rem;
-  color: var(--text-muted);
-}
-
-/* Footer */
-footer.site-foot {
-  border-top: 1px solid var(--border);
-  padding: 20px 0 24px;
-  margin-top: 16px;
-}
-
-footer.site-foot .wrap {
-  max-width: 760px;
-  font-size: 0.85rem;
-  color: var(--text-muted);
-}
-
-@media (max-width: 640px) {
-  .about-content {
-    flex-direction: column;
-  }
-  .about-headshot {
-    width: 100%;
-    height: 260px;
-  }
-  .cta-block .inner { padding: 28px 24px; }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  html { scroll-behavior: auto; }
-}
-
+<footer><div class="wrap">Mekong Quality Assurance Advisory · mekongqa.com</div></footer>
+</body>
+</html>
