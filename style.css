@@ -118,3 +118,71 @@ td.na{color:var(--muted)}
 .cta-end{margin-top:3rem}
 @media (max-width:820px){.deliver{grid-template-columns:1fr}}
 @media (max-width:640px){.engage{grid-template-columns:1fr}}
+
+
+
+/* Thinner sub-nav border and top margin */
+.sub-nav {
+  margin-top: 1.5rem;
+  border-bottom: 1px solid #e2e8f0; /* Thinner line so it doesn't fight main nav */
+  padding-bottom: 0.75rem;
+}
+
+.sub-nav a {
+  text-transform: capitalize; /* Ensures Title Case */
+}
+
+/* Subheading size reduction */
+.section-subheading {
+  font-size: 1rem; /* Scaled down 1-2pt */
+  font-weight: 500;
+  color: #4a5568;
+}
+
+/* Headings sizing & weight */
+.heading-deliverables,
+.heading-engagement {
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+
+.heading-alignment {
+  font-size: 1.5rem;
+  font-weight: 700;
+  border-left: 4px solid #0f172a;
+  padding-left: 0.5rem;
+}
+
+/* Core Deliverables: 2-column, 1-row layout */
+.deliverables-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.deliverables-grid ul {
+  list-style-type: disc;
+  padding-left: 1.25rem;
+  margin: 0;
+}
+
+/* Operational Alignment Column Color Differences */
+.alignment-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.alignment-table th, 
+.alignment-table td {
+  padding: 1rem;
+  vertical-align: top;
+}
+
+.alignment-table .col-mekong {
+  background-color: #f8fafc;
+}
+
+.alignment-table .col-plant {
+  background-color: #f1f5f9; /* Distinct background contrast */
+}
