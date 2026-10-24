@@ -5,90 +5,140 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Services | Mekong Food Integrity & Compliance Associates</title>
-    <!-- Corrected live stylesheet link -->
     <link rel="stylesheet" href="style.css">
-    <style>
-        /* 1. Sub-nav spacing, thinned bottom line, and capitalization */
-        .sub-nav-wrapper {
-            margin-top: 1.25rem;
-            padding-bottom: 0.75rem;
-            border-bottom: 1px solid var(--border-color, #e2e8f0);
-        }
+</head>
+<body>
 
-        .sub-nav a {
-            text-transform: capitalize;
-        }
+    <div class="container">
+        
+        <!-- Main Navigation -->
+        <header>
+            <div class="main-nav">
+                <a href="index.html" class="brand">Mekong Food Integrity & Compliance Associates</a>
+                <nav class="main-nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="services.html" class="active">Services</a>
+                    <a href="about.html">About</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+            </div>
 
-        /* 2. Subheading size reduction */
-        .section-subheading {
-            font-size: 0.95rem;
-            color: var(--text-muted, #64748b);
-            font-weight: 500;
-            margin-top: 0.5rem;
-            margin-bottom: 2rem;
-        }
+            <!-- Space above sub-navigation -->
+            <br>
 
-        /* 3. Core Deliverables Heading Enlarged */
-        .heading-deliverables {
-            font-size: 1.85rem;
-            font-weight: 800;
-            margin-top: 2.5rem;
-            margin-bottom: 1rem;
-        }
+            <!-- Sub Navigation Architecture -->
+            <div class="sub-nav-wrapper" style="margin-top: 1.25rem; padding-bottom: 0.75rem; border-bottom: 1px solid #e2e8f0;">
+                <nav class="sub-nav" style="text-transform: capitalize;">
+                    <a href="#architecture">Co-Packer QA Architecture</a>
+                    <span>|</span>
+                    <a href="#verification">Fractional QA Verification</a>
+                    <span>|</span>
+                    <a href="#auditing">Supplier Auditing</a>
+                    <span>|</span>
+                    <a href="#compliance">Regulatory Compliance</a>
+                </nav>
+            </div>
+        </header>
 
-        /* 4. Core Deliverables Table: 2-column, 1-row table with bullet points */
-        .deliverables-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 1rem;
-            border: 1px solid var(--border-color, #e2e8f0);
-        }
+        <main>
+            <!-- Header Section -->
+            <section style="margin-top: 2rem;">
+                <h1>Services & Operational Framework</h1>
+                <!-- Subheading reduced by 1-2 points -->
+                <p class="section-subheading" style="font-size: 0.95rem; color: #64748b; font-weight: 500;">Specification Without Defined Tolerances Isn't A Quality Standard.</p>
+            </section>
 
-        .deliverables-table td {
-            width: 50%;
-            vertical-align: top;
-            padding: 1.5rem;
-            background-color: #ffffff;
-        }
+            <!-- Core Deliverables Section -->
+            <section id="architecture">
+                <!-- Heading enlarged -->
+                <h2 style="font-size: 1.85rem; font-weight: 800; margin-top: 2.5rem; margin-bottom: 1rem;">Core Deliverables</h2>
+                
+                <!-- Rebuilt into 2-column, 1-row table with bullet points -->
+                <table style="width: 100%; border-collapse: collapse; margin-top: 1rem; border: 1px solid #e2e8f0;">
+                    <tbody>
+                        <tr>
+                            <td style="width: 50%; vertical-align: top; padding: 1.5rem; border-right: 1px solid #e2e8f0; background-color: #ffffff;">
+                                <ul style="margin: 0; padding-left: 1.25rem;">
+                                    <li>Finished Goods Quality Standards & Testing Protocols</li>
+                                    <li>In-line Defect Classification & Critical Limits</li>
+                                    <li>Packaging & Labeling Compliance Matrices</li>
+                                    <li>Raw Material Acceptability Specifications</li>
+                                </ul>
+                            </td>
+                            <td style="width: 50%; vertical-align: top; padding: 1.5rem; background-color: #ffffff;">
+                                <ul style="margin: 0; padding-left: 1.25rem;">
+                                    <li>COA Review & Batch Release Workflows</li>
+                                    <li>Batch Record Verification Standards</li>
+                                    <li>Non-Conformance & Deviation Escalation Triggers</li>
+                                    <li>Pre-Shipment Inspection Checklists</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
 
-        .deliverables-table td:first-child {
-            border-right: 1px solid var(--border-color, #e2e8f0);
-        }
+            <!-- Operational Alignment Section -->
+            <section id="alignment">
+                <!-- Heading defined with left border -->
+                <h2 style="font-size: 1.5rem; font-weight: 700; margin-top: 3rem; margin-bottom: 1rem; padding-left: 0.75rem; border-left: 4px solid #0f172a;">Operational Alignment</h2>
+                
+                <table style="width: 100%; border-collapse: collapse; margin-top: 1rem; border: 1px solid #e2e8f0;">
+                    <thead>
+                        <tr>
+                            <th style="text-align: left; padding: 1rem 1.25rem; font-size: 1rem; font-weight: 700; background-color: #f8fafc; border-right: 1px solid #e2e8f0; width: 50%;">Mekong QA Responsibilities</th>
+                            <!-- Dropped 'The' -->
+                            <th style="text-align: left; padding: 1rem 1.25rem; font-size: 1rem; font-weight: 700; background-color: #f1f5f9; width: 50%;">Co-packer Plant Responsibilities</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <!-- Distinct column background color fills -->
+                            <td style="padding: 1.25rem; vertical-align: top; background-color: #f8fafc; border-right: 1px solid #e2e8f0;">
+                                <ul style="margin: 0; padding-left: 1.25rem;">
+                                    <li>Define sampling plans, defect criteria, and non-negotiable limits.</li>
+                                    <li>Perform independent verification on finished lots prior to release.</li>
+                                    <li>Audit batch documentation and root cause analyses for deviations.</li>
+                                    <li>Escalate critical out-of-spec findings directly to brand leadership.</li>
+                                </ul>
+                            </td>
+                            <td style="padding: 1.25rem; vertical-align: top; background-color: #f1f5f9;">
+                                <ul style="margin: 0; padding-left: 1.25rem;">
+                                    <li>Execute day-to-day floor monitoring and line checks.</li>
+                                    <li>Maintain operational sanitation, HACCP, and logbook entries.</li>
+                                    <li>Provide full access to batch records, COAs, and production data.</li>
+                                    <li>Implement corrective actions for identified operational gaps.</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
 
-        .deliverables-table ul {
-            margin: 0;
-            padding-left: 1.25rem;
-        }
+            <!-- Engagement Models Section -->
+            <section id="engagement">
+                <!-- Heading bigger and bolder -->
+                <h2 style="font-size: 1.85rem; font-weight: 800; margin-top: 3rem; margin-bottom: 1rem;">Engagement Models: Retainer vs. On-Demand</h2>
+                
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 1rem;">
+                    <div style="border: 1px solid #e2e8f0; padding: 1.5rem; background: #ffffff;">
+                        <h3 style="margin-top:0;">Retainer Model</h3>
+                        <p>Continuous oversight and embedded support for ongoing production runs, recurring factory audits, and daily quality verification.</p>
+                    </div>
+                    <div style="border: 1px solid #e2e8f0; padding: 1.5rem; background: #ffffff;">
+                        <h3 style="margin-top:0;">On-Demand Model</h3>
+                        <p>Targeted pre-shipment inspections, single-run line start-up verification, and rapid defect containment for specific production batches.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
 
-        .deliverables-table li {
-            margin-bottom: 0.75rem;
-        }
+        <footer>
+            <p>&copy; 2026 Mekong Food Integrity & Compliance Associates LLC. All rights reserved.</p>
+        </footer>
 
-        .deliverables-table li:last-child {
-            margin-bottom: 0;
-        }
+    </div>
 
-        /* 5. Operational Alignment Heading Defined */
-        .heading-alignment {
-            font-size: 1.5rem;
-            font-weight: 700;
-            margin-top: 3rem;
-            margin-bottom: 1rem;
-            padding-left: 0.75rem;
-            border-left: 4px solid var(--primary-color, #0f172a);
-        }
-
-        /* 6. Operational Alignment Table: Color differentiation & header fix */
-        .alignment-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 1rem;
-            border: 1px solid var(--border-color, #e2e8f0);
-        }
-
-        .alignment-table th {
-            text-align: left;
-            padding: 1rem 1.25rem;
-            font-size: 1rem;
-            font-weight: 7
+</body>
+</html>
 
