@@ -10,7 +10,7 @@ body{margin:0;background:var(--bg);color:var(--ink);font:400 1.0625rem/1.65 var(
 header{border-bottom:1px solid var(--rule)}
 .brand{font:500 clamp(1.9rem,5vw,2.9rem)/1.15 var(--serif);margin:2rem 0 .5rem;letter-spacing:.005em}
 .tag{font:400 1.2rem/1.5 var(--serif);color:var(--muted);margin:0 0 1.5rem}
-nav{display:flex;gap:1.75rem;flex-wrap:wrap}
+nav{display:flex;gap:1.75rem;flex-wrap:wrap; align-items:baseline}
 nav a{color:var(--muted);text-decoration:none;padding:.5rem 0 .6rem;border-bottom:2px solid transparent;font-size:1rem}
 nav a:hover,nav a:focus-visible{color:var(--ink)}
 nav a[aria-current="page"]{color:var(--ink);font-weight:700;border-bottom-color:var(--accent)}
