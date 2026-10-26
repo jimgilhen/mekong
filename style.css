@@ -138,8 +138,23 @@ h1, h2, h3 {
 }
 
 .hero {
-  padding: 3rem 0 2.5rem;
+  padding: 3.5rem 0 2.5rem;
 }
+
+.hero-split {
+  display: grid;
+  grid-template-columns: 1fr 270px;
+  gap: 3.5rem;
+  align-items: start;
+}
+
+.hero-profile {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-top: 0;
+}
+
 
 h1 {
   font-size: clamp(1.8rem, 4.2vw, 2.5rem);
