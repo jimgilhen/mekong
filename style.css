@@ -621,6 +621,7 @@ footer {
   border-top: 2px solid var(--ink);
 }
 
+
 .page .part-intro {
   font: 500 clamp(1.35rem, 2.8vw, 1.7rem)/1.35 var(--serif);
   color: var(--ink);
