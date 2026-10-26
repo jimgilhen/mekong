@@ -73,7 +73,6 @@ body {
   font: 400 1.0625rem/1.65 var(--sans);
 }
 
-
 .wrap {
   max-width: 1040px;
   margin: 0 auto;
@@ -169,7 +168,7 @@ h1 {
 /* Two-Column Hero Split Layout */
 .hero-split {
   display: grid;
-  grid-template-columns: 1fr 270px; /* Scaled down slightly to tighten visual height */
+  grid-template-columns: 1fr 270px;
   gap: 3.5rem;
   align-items: start;
   margin-top: 1.5rem;
@@ -179,14 +178,14 @@ h1 {
 .hero-profile {
   display: flex;
   flex-direction: column;
-  gap: 0.85rem; /* Tightened gap for cleaner alignment */
-  margin-top: 0; /* Ensures flush top alignment with left prose */
+  gap: 0.85rem;
+  margin-top: 0;
 }
 
 .portrait-img {
   width: 100%;
   height: auto;
-  max-height: 280px; /* Constrains height to keep bottom aligned with prose */
+  max-height: 280px;
   border-radius: 6px;
   object-fit: cover;
   display: block;
@@ -317,15 +316,25 @@ dd {
   color: var(--muted);
 }
 
+/* Stage Cards with Copper Top Accent and Pill Badges */
+.card.stage {
+  border-top: 3px solid var(--copper);
+}
+
 .stage h3 {
   font-size: 1.45rem;
 }
 
 .stage h3 small {
-  display: block;
-  font: 700 0.9rem var(--sans);
+  display: inline-block;
+  font: 700 0.75rem var(--sans);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  background: color-mix(in srgb, var(--copper) 12%, transparent);
   color: var(--copper);
-  margin-bottom: 0.3rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 2px;
+  margin-bottom: 0.5rem;
 }
 
 .run {
@@ -851,7 +860,7 @@ td.na {
 @media (max-width: 768px) {
   .hero-split {
     grid-template-columns: 1fr;
-    gap: 2rem;
+    gap: 2.5rem;
   }
   .hero-profile {
     max-width: 270px;
