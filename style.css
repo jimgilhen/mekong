@@ -225,5 +225,25 @@ td.na{color:var(--muted)}
   }
 }
 
+.sig {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin-top: 1.5rem;
+}
+
+.linkedin-link {
+  font-size: 0.875rem;
+  color: #666; /* Adjust to match your secondary text color */
+  text-decoration: none;
+  margin-top: 0.25rem;
+  transition: color 0.2s ease;
+}
+
+.linkedin-link:hover {
+  color: #000; /* Adjust to match your link hover color */
+  text-decoration: underline;
+}
+
 
 
