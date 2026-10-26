@@ -872,6 +872,9 @@ td.na {
 @media (max-width: 640px) {
   .engage { grid-template-columns: 1fr; }
 }
+section {
+  border-top: 2px solid var(--ink);
+}
 
 
 .photos img {
