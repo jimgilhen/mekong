@@ -884,3 +884,35 @@ section {
   object-fit: cover;
   display: block;
 }
+
+.section-with-sidebar {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+@media (min-width: 768px) {
+  .section-with-sidebar {
+    grid-template-columns: 2fr 1fr;
+    align-items: start;
+  }
+}
+
+.sidebar-photos {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.sidebar-photos figure {
+  margin: 0;
+}
+
+.sidebar-photos img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
