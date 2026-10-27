@@ -919,3 +919,32 @@ section {
   border: 1px solid rgba(139, 69, 19, 0.25);
   box-shadow: 0 8px 20px -4px rgba(0, 0, 0, 0.1);
 }
+
+/* Unified Page Layout with Continuous Image Sidebar */
+.about-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3.5rem;
+  align-items: start;
+}
+
+@media (min-width: 768px) {
+  .about-layout {
+    grid-template-columns: 1fr 270px;
+  }
+}
+
+.about-layout .sidebar-photos {
+  display: flex;
+  flex-direction: column;
+  gap: 1.15rem;
+  margin-top: 0;
+}
+
+@media (min-width: 768px) {
+  .about-layout .sidebar-photos {
+    position: sticky;
+    top: 2rem;
+  }
+}
+
