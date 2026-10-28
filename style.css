@@ -835,16 +835,16 @@ td.na {
   margin-bottom: 1.5rem;
 }
 
-.tablewrap tbody tr > :nth-child(n+4) {
+.tablewrap tbody tr > :nth-child(n+5) {
   background: color-mix(in srgb, var(--copper) 7%, transparent);
 }
 
-.tablewrap thead th:nth-child(n+4) {
+.tablewrap thead th:nth-child(n+5) {
   background: var(--copper);
   color: #ffffff;
 }
 
-.tablewrap tr > :nth-child(4) {
+.tablewrap tr > :nth-child(5) {
   border-left: 3px solid var(--copper);
 }
 
