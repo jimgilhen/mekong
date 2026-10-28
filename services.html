@@ -70,21 +70,80 @@
   <h3 class="sub">Operational alignment: division of responsibility</h3>
   <p class="intro" style="margin-top:0">How production responsibilities flow from the brand, the plant, and legal terms into technical architecture and ongoing floor verification.</p>
   <div class="tablewrap" tabindex="0" role="region" aria-label="Division of responsibility table, scrolls sideways on small screens">
-      <table>
-      <thead><tr><th scope="col">Functional area</th><th scope="col">You, the brand owner</th><th scope="col">The co-packer's team</th><th scope="col">Your legal counsel</th><th scope="col">Me: QA architecture</th><th scope="col">Me: fractional QA verification</th></tr></thead>
+<table>
+      <thead>
+        <tr>
+          <th scope="col">Functional area</th>
+          <th scope="col">You, the brand owner</th>
+          <th scope="col">The co-packer's team</th>
+          <th scope="col">Your legal counsel</th>
+          <th scope="col" class="highlight">Me: QA architecture</th>
+          <th scope="col">Me: fractional QA verification</th>
+        </tr>
+      </thead>
       <tbody>
-<tr><th scope="row">Primary responsibility</th><td>Owns the recipe, the brand, and the final call on every lot.</td><td>Facility compliance and food safety operations.</td><td>The contract and how commercial risk is allocated.</td><td>Whether the product looks, tastes, and smells the way you approved it.</td><td>Whether it keeps doing so, batch after batch, and not just on the first run.</td></tr>
-<tr><th scope="row">Recipe &amp; approved product</th><td>Owns the recipe and approves the reference product that sets the standard.</td><td>Produces to your recipe and its own process.</td><td>Protects your recipe and confidentiality in the agreement.</td><td>Works from your approved finished product, not from your recipe.</td><td>Compares each production run with that approved product.</td></tr>
-<tr><th scope="row">Food safety &amp; regulatory</th><td>Engages its own regulatory advisor for destination-market rules, including whether the label is legally compliant.</td><td>Owns the food safety plan, environmental monitoring, safety testing, and facility licensing.</td><td>Writes the factory’s regulatory obligations and indemnities into the agreement.</td><td class="na">&mdash;</td><td>Reports and escalates anything safety-related I see. I do not validate or certify food safety.</td></tr>
-<tr><th scope="row">Product specification</th><td>Approves the specification.</td><td>Acknowledges the specification and follows its standard operating procedures.</td><td>Incorporates the product specification as a binding warranty of product quality within the master agreement.</td><td>Sets measurable ranges for your approved product (color, pH, Brix, viscosity, water activity, texture, fill weight, taste and smell) from baseline readings.</td><td>Checks finished product against the specification, so you aren’t relying only on the plant’s own report.</td></tr>
-<tr><th scope="row">Packaging specification</th><td>Approves it, or hires a packaging consultant to write it.</td><td>States its packaging specs when I ask for them, if you use the plant’s own packaging.</td><td>Incorporates the packaging specification into the agreement.</td><td>Records the packaging standard, from your consultant or the plant’s specs, so it can be inspected: print quality, ingredient list and allergen statement as printed against your approved artwork, barcode, lot codes, cartons, pallets.</td><td>Checks printing, labels, cartons, and pallets against it on the line.</td></tr>
-<tr><th scope="row">Verification protocol</th><td>Approves the protocol.</td><td>Runs line measurements and pulls its own lab samples.</td><td>Incorporates the finished protocol into the agreement.</td><td>Sets sampling plans, test methods, the on-site and lab checks, and defect classes.</td><td>Confirms agreed sampling and test methods are actually being followed on the line, and runs the on-site checks with my own instruments.</td></tr>
-<tr><th scope="row">Rejections &amp; corrective action</th><td>Makes the release, hold, rework, or reject decision.</td><td>Manages rework and scrap, and carries out corrective actions.</td><td>Drafts remedies and dispute terms for failed batches, including how a disputed reading is re-tested.</td><td>Defines data-based rejection criteria and corrective action steps, with responsibilities assigned.</td><td>Flags off-spec production before it ships, reports it to you, and follows each corrective action through to closure.</td></tr>
-<tr><th scope="row">Acceptance &amp; payment</th><td>Releases payment against the technical acceptance criteria.</td><td>Supplies Certificate of Analysis (COA) data with each lot.</td><td>Drafts payment milestones and ties them directly to technical acceptance criteria.</td><td>Defines acceptance criteria and the data that must accompany each lot.</td><td>Compares the plant's reported results with my own spot checks and flags any discrepancy before a payment milestone clears.</td></tr>
-<tr><th scope="row">Day-to-day quality issues</th><td>Receives the documented record and makes the calls.</td><td>Handles quality issues internally and reports them as it sees fit.</td><td>Relies on the documented record if a dispute arises.</td><td class="na">&mdash;</td><td>Acts as your point of contact with the plant on quality, keeping a documented record of results.</td></tr>
-<tr><th scope="row">The agreement itself</th><td>Signs the agreement with the co-packer.</td><td>Signs the master services agreement.</td><td>Drafts contract terms: liability limits, payment schedules, and IP protection.</td><td>Delivers the complete technical package (product specification, packaging specification, and verification protocol) for counsel to incorporate.</td><td class="na">&mdash;</td></tr>
-      </tbody>
-    </table>
+        <tr>
+          <th scope="row">Primary responsibility</th>
+          <td>Owns the recipe, the brand, and the final call on every lot.</td>
+          <td>Facility compliance and food safety operations.</td>
+          <td>The contract and how commercial risk is allocated.</td>
+          <td class="highlight">Whether the product looks, tastes, and smells the way you approved it.</td>
+          <td>Whether it keeps doing so, batch after batch, and not just on the first run.</td>
+        </tr>
+        <tr>
+          <th scope="row">Recipe &amp; approved product</th>
+          <td>Owns the recipe and approves the reference product that sets the standard.</td>
+          <td>Produces to your recipe and its own process.</td>
+          <td>Protects your recipe and confidentiality in the agreement.</td>
+          <td class="highlight">Works from your approved finished product, not from your recipe.</td>
+          <td>Compares each production run with that approved product.</td>
+        </tr>
+        <tr>
+          <th scope="row">Food safety &amp; regulatory</th>
+          <td>Engages its own regulatory advisor for destination-market rules, including whether the label is legally compliant.</td>
+          <td>Owns the food safety plan, environmental monitoring, safety testing, and facility licensing.</td>
+          <td>Writes the factory’s regulatory obligations and indemnities into the agreement.</td>
+          <td class="na highlight">&mdash;</td>
+          <td>Reports and escalates anything safety-related I see. I do not validate or certify food safety.</td>
+        </tr>
+        <tr>
+          <th scope="row">Product specification</th>
+          <td>Approves the specification.</td>
+          <td>Acknowledges the specification and follows its standard operating procedures.</td>
+          <td>Incorporates the product specification as a binding warranty of product quality within the master agreement.</td>
+          <td class="highlight">Sets measurable ranges for your approved product (color, pH, Brix, viscosity, water activity, texture, fill weight, taste and smell) from baseline readings.</td>
+          <td>Checks finished product against the specification, so you aren’t relying only on the plant’s own report.</td>
+        </tr>
+        <tr>
+          <th scope="row">Packaging specification</th>
+          <td>Approves it, or hires a packaging consultant to write it.</td>
+          <td>States its packaging specs when I ask for them, if you use the plant’s own packaging.</td>
+          <td>Incorporates the packaging specification into the agreement.</td>
+          <td class="highlight">Records the packaging standard, from your consultant or the plant’s specs, so it can be inspected: print quality, ingredient list and allergen statement as printed against your approved artwork, barcode, lot codes, cartons, pallets.</td>
+          <td>Checks printing, labels, cartons, and pallets against it on the line.</td>
+        </tr>
+        <tr>
+          <th scope="row">Verification protocol</th>
+          <td>Approves the protocol.</td>
+          <td>Runs line measurements and pulls its own lab samples.</td>
+          <td>Incorporates the finished protocol into the agreement.</td>
+          <td class="highlight">Sets sampling plans, test methods, the on-site and lab checks, and defect classes.</td>
+          <td>Confirms agreed sampling and test methods are actually being followed on the line, and runs the on-site checks with my own instruments.</td>
+        </tr>
+        <tr>
+          <th scope="row">Rejections &amp; corrective action</th>
+          <td>Makes the release, hold, rework, or reject decision.</td>
+          <td>Manages rework and scrap, and carries out corrective actions.</td>
+          <td>Drafts remedies and dispute terms for failed batches, including how a disputed reading is re-tested.</td>
+          <td class="highlight">Defines data-based rejection criteria and corrective action steps, with responsibilities assigned.</td>
+          <td>Flags off-spec production before it ships, reports it to you, and follows each corrective action through to closure.</td>
+        </tr>
+        <tr>
+          <th scope="row">Acceptance &amp; payment</th>
+          <td>Releases payment against the technical acceptance criteria.</td>
+          <td>Supplies Certificate of Analysis (COA) data with each lot.</td>
+          <td>
+
 
   </div>
 
