@@ -947,4 +947,44 @@ section {
     top: 2rem;
   }
 }
+/* Resource Section Grid & Cards */
+.resource-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.resource-card {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 1.25rem;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.resource-card h2 {
+  font-family: 'EB Garamond', serif;
+  font-size: 1.35rem;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+}
+
+.resource-card p {
+  font-size: 0.95rem;
+  line-height: 1.4;
+  color: #444;
+  margin-bottom: 1.25rem;
+  flex-grow: 1;
+}
+
+.resource-card .btn {
+  align-self: flex-start;
+  text-decoration: none;
+  display: inline-block;
+}
+
 
