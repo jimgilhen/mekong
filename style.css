@@ -987,4 +987,81 @@ section {
   display: inline-block;
 }
 
+/* Glossary Specific Styling */
+.glossary-toc {
+  background: #f9f9f9;
+  border: 1px solid #eee;
+  padding: 1.25rem;
+  border-radius: 4px;
+  margin-bottom: 2.5rem;
+}
+
+.glossary-toc h2 {
+  font-family: 'EB Garamond', serif;
+  font-size: 1.25rem;
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+}
+
+.glossary-toc ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.5rem;
+}
+
+.glossary-toc a {
+  color: #000;
+  font-weight: 700;
+  font-size: 0.95rem;
+  text-decoration: underline;
+}
+
+.glossary-section {
+  margin-bottom: 3rem;
+}
+
+.glossary-section h2 {
+  font-family: 'EB Garamond', serif;
+  font-size: 1.75rem;
+  border-bottom: 2px solid #222;
+  padding-bottom: 0.4rem;
+  margin-bottom: 1.5rem;
+}
+
+.glossary-entry {
+  margin-bottom: 1.75rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.glossary-entry h3 {
+  font-family: 'EB Garamond', serif;
+  font-size: 1.3rem;
+  margin-top: 0;
+  margin-bottom: 0.35rem;
+}
+
+.glossary-entry p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.see-also {
+  font-size: 0.85rem;
+  color: #666;
+  font-style: italic;
+  margin-top: 0.25rem;
+}
+
+.see-also a {
+  color: #333;
+  text-decoration: underline;
+}
+
+
 
