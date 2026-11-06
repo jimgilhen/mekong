@@ -26,7 +26,7 @@ header{position:sticky;top:env(safe-area-inset-top,0px);z-index:11;background:va
 .btn{display:inline-block;background:var(--tx);color:var(--bg)!important;padding:9px 18px;border-radius:6px;font-weight:700;font-size:14px;text-decoration:none}
 .menu{display:none;background:none;border:1px solid var(--ln);border-radius:6px;padding:7px 11px;color:var(--tx);font:inherit;font-size:14px;cursor:pointer}
 @media(max-width:700px){.menu{display:block}.brand{font-size:17px;max-width:170px}.r nav{display:none;position:absolute;left:-20px;right:-20px;top:100%;background:var(--sf);border-bottom:1px solid var(--ln);flex-direction:column;align-items:flex-start;padding:14px 20px;gap:14px}.r nav.open{display:flex}}
-main{padding:36px 0 56px}
+main{padding:60px 0 56px}.back{display:inline-block;font-size:13px;color:var(--mu);text-decoration:none;margin-bottom:14px}@media(max-width:700px){main{padding-top:40px}}
 h1,.page-title{font-size:clamp(28px,5.4vw,42px);margin:0 0 12px}
 h2{font-size:clamp(23px,4vw,30px);margin:30px 0 10px}
 .lede,.confidential{font-size:18px;color:var(--mu);max-width:700px;margin:0 0 24px}
@@ -45,22 +45,3 @@ ol.q{padding-left:22px;max-width:720px}ol.q li{margin-bottom:14px}ol.q b{display
 .glossary-toc h2{font-size:18px;margin:0 0 8px}.glossary-toc ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
 .glossary-toc a{font-size:13px;padding:4px 12px;border:1px solid var(--ln);border-radius:6px;text-decoration:none;color:var(--mu)}
 .glossary-section{padding-top:22px}.glossary-section>h2{border-bottom:1px solid var(--ln);padding-bottom:6px}
-.glossary-entry{background:var(--sf);border:1px solid var(--ln);border-radius:10px;padding:14px 16px;margin:10px 0}
-.glossary-entry h3{font-size:19px}.glossary-entry p{font-size:15px;margin:6px 0 0;color:var(--mu)}.see-also{font-size:13px!important}
-footer{padding:26px 0;border-top:1px solid var(--ln);font-size:13px;color:var(--mu);text-align:center}
-</style>
-</head>
-<body>
-<header><div class="w"><div class="top"><a class="brand" href="index.html">Mekong Quality Assurance Advisory</a><div class="r"><nav id="nav"><a href="resources.html" aria-current="page">Resources</a><a href="about.html">About</a><a href="framework.html">Framework</a></nav><a class="btn" href="contact.html">Contact</a><button class="menu" id="mb" aria-expanded="false" aria-label="Menu">Menu</button></div></div></div></header>
-<main class="wrap">
-<h1>Resources</h1>
-<p class="lede">Plain-language material for food and beverage brands working with overseas co-packers.</p>
-<div class="grid">
-<div class="card"><p class="kick">Article</p><h3>Questions to ask your co-packer before signing a contract</h3><p>Eleven questions about the part of the deal a standard agreement usually leaves out: how quality is checked and what happens when a lot fails.</p><p><a href="questions.html"><b>Read the article</b></a></p></div>
-<div class="card"><p class="kick">Glossary</p><h3>Co-packer quality terminology and specifications</h3><p>The documents, contracts, measurements, sampling terms, and standards explained in plain language, with notes on working with factories.</p><p><a href="glossary.html"><b>Open the glossary</b></a></p></div>
-</div>
-</main>
-<footer><div class="w">Mekong Quality Assurance Advisory &middot; mekongqa.com</div></footer>
-<script>document.getElementById('mb').addEventListener('click',function(){var o=document.getElementById('nav').classList.toggle('open');this.setAttribute('aria-expanded',o)});</script>
-</body>
-</html>
