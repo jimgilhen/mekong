@@ -26,7 +26,7 @@ header{position:sticky;top:env(safe-area-inset-top,0px);z-index:11;background:va
 .btn{display:inline-block;background:var(--tx);color:var(--bg)!important;padding:9px 18px;border-radius:6px;font-weight:700;font-size:14px;text-decoration:none}
 .menu{display:none;background:none;border:1px solid var(--ln);border-radius:6px;padding:7px 11px;color:var(--tx);font:inherit;font-size:14px;cursor:pointer}
 @media(max-width:700px){.menu{display:block}.brand{font-size:17px;max-width:170px}.r nav{display:none;position:absolute;left:-20px;right:-20px;top:100%;background:var(--sf);border-bottom:1px solid var(--ln);flex-direction:column;align-items:flex-start;padding:14px 20px;gap:14px}.r nav.open{display:flex}}
-main{padding:36px 0 56px}
+main{padding:60px 0 56px}.back{display:inline-block;font-size:13px;color:var(--mu);text-decoration:none;margin-bottom:14px}@media(max-width:700px){main{padding-top:40px}}
 h1,.page-title{font-size:clamp(28px,5.4vw,42px);margin:0 0 12px}
 h2{font-size:clamp(23px,4vw,30px);margin:30px 0 10px}
 .lede,.confidential{font-size:18px;color:var(--mu);max-width:700px;margin:0 0 24px}
@@ -52,8 +52,10 @@ footer{padding:26px 0;border-top:1px solid var(--ln);font-size:13px;color:var(--
 </style>
 </head>
 <body>
-<header><div class="w"><div class="top"><a class="brand" href="index.html">Mekong Quality Assurance Advisory</a><div class="r"><nav id="nav"><a href="resources.html">Resources</a><a href="about.html">About</a><a href="framework.html">Framework</a></nav><a class="btn" href="contact.html">Contact</a><button class="menu" id="mb" aria-expanded="false" aria-label="Menu">Menu</button></div></div></div></header>
+<header><div class="w"><div class="top"><a class="brand" href="index.html">Mekong Quality Assurance Advisory</a><div class="r"><nav id="nav"><a href="index.html">Home</a><a href="resources.html">Resources</a><a href="about.html">About</a><a href="framework.html">Framework</a></nav><a class="btn" href="contact.html">Contact</a><button class="menu" id="mb" aria-expanded="false" aria-label="Menu">Menu</button></div></div></div></header>
 <main class="wrap">
+<a class="back" href="index.html">&larr; Home</a>
+<p class="kick">Contact</p>
 <h1>Request a QA scope review</h1>
 <p class="lede">Tell me where you are and send what you have. I’ll show you where it leaves room for guesswork, and I reply within one business day.</p>
 <p class="note" style="margin-bottom:20px">All communications are strictly confidential.</p>
