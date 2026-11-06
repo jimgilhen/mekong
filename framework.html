@@ -45,3 +45,152 @@ h3{font-size:20px;margin-bottom:6px}
 .tw{overflow-x:auto;border:1px solid var(--ln);border-radius:10px;background:var(--sf);margin:14px 0}
 table{border-collapse:collapse;font-size:13px;width:100%}
 .big{min-width:1000px}
+th,td{padding:10px 12px;border-bottom:1px solid var(--ln);border-right:1px solid var(--ln);vertical-align:top;text-align:left}
+thead th{background:var(--gr);font-size:12px;position:sticky;top:0}
+tbody th{background:var(--gr);min-width:130px}
+.big tbody th{position:sticky;left:0}
+.me{background:var(--teb)}
+.na{color:var(--mu);text-align:center}
+.steps{counter-reset:s;list-style:none;padding:0;margin:0;display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.steps li{counter-increment:s;background:var(--sf);border:1px solid var(--ln);border-radius:10px;padding:16px 16px 16px 52px;position:relative;font-size:14px;color:var(--mu)}
+.steps li::before{content:counter(s);position:absolute;left:16px;top:14px;width:26px;height:26px;border-radius:50%;background:var(--te);color:var(--bg);font-weight:700;font-size:13px;display:flex;align-items:center;justify-content:center}
+.steps b{display:block;color:var(--tx);font-size:15px}
+.scroll{font-size:12px;color:var(--mu);margin:0}
+ul.plain{margin:0 0 12px;padding-left:20px;color:var(--mu);font-size:15px}
+.cta{text-align:center;background:var(--tx);color:var(--bg);border-radius:14px;padding:40px 22px}
+.cta p{max-width:520px;margin:0 auto 20px;opacity:.85}.cta h2::after{margin:10px auto 0;background:var(--bg)}
+.cta .btn{background:var(--bg);color:var(--tx)!important}
+footer{padding:26px 0;border-top:1px solid var(--ln);font-size:13px;color:var(--mu);text-align:center}
+</style>
+</head>
+<body>
+<header><div class="w">
+<div class="top"><a class="brand" href="index.html">Mekong Quality Assurance Advisory</a><div class="r"><nav id="nav"><a href="resources.html">Resources</a><a href="about.html">About</a><a href="framework.html" aria-current="page">Framework</a></nav><a class="btn" href="contact.html">Contact</a><button class="menu" id="mb" aria-expanded="false" aria-label="Menu">Menu</button></div></div>
+<div class="jump"><a href="#documents">Documents</a><a href="#who">Who does what</a><a href="#spec">Product spec</a><a href="#packaging">Packaging</a><a href="#verification">Verification</a><a href="#safety">Food safety boundary</a><a href="#process">How it runs</a></div>
+</div></header>
+
+<main>
+<section style="border-top:0"><div class="w">
+<p class="kick">The framework</p>
+<h1>How product specs and verification work with a co-packer</h1>
+<p class="lede">You approved a product. The risk in co-packing is that later runs slowly stop matching it: a little darker, a little thinner, a different cap, a label with a printing error. Nobody changed the recipe on purpose, and nobody can prove what the standard was, because it was never written down tightly enough to check. I call that drift.</p>
+<p style="max-width:700px">I prevent it with three working documents: the Product Spec, the Packaging Specification, and the Verification Protocol. Your counsel attaches them to the agreement with your co-packer, so they are enforceable. I work from your approved finished product, not from your recipe. The recipe stays yours. Your own paperwork may call these documents an annex or an exhibit. What matters is that the content exists.</p>
+</div></section>
+
+<section id="documents"><div class="w">
+<h2>The four documents at a glance</h2>
+<div class="grid">
+<div class="card"><h3>Master Quality Agreement</h3><p>The signed agreement between you and the co-packer, written by your counsel, that the other three documents attach to: consequences of failure, change control, per-lot test data, retained samples, traceability, recalls.</p><p class="tag">Drift prevented: nothing makes the plant answerable when a lot fails.</p></div>
+<div class="card"><h3>Product Spec</h3><p>The food: color, °Brix, pH, water activity, salinity, alcohol by volume (ABV) where applicable, consistency, fill, visual, and taste and smell, as measurable ranges built from your approved product.</p><p class="tag">Drift prevented: the product slowly moving away from the one you approved.</p></div>
+<div class="card"><h3>Packaging Specification</h3><p>The pack: seal and closure, label and printing, ingredient list and allergen statement as printed, barcode, lot and date code, carton, pallet.</p><p class="tag">Drift prevented: quiet changes in materials and pallets, and printing errors that reach the shelf.</p></div>
+<div class="card"><h3>Verification Protocol</h3><p>How each production run is checked against the other two: what I measure on site, sampling plans, defect classes, what happens when a lot fails.</p><p class="tag">Drift prevented: the first two documents sitting on paper with nobody checking them.</p></div>
+</div>
+</div></section>
+
+<section id="who"><div class="w">
+<h2>Who does what</h2>
+<p class="lede" style="margin-top:0">How responsibilities flow from you, the plant, and your counsel into the technical documents and the floor verification.</p>
+<p class="scroll">Scroll sideways to see every column.</p>
+<div class="tw" tabindex="0" role="region" aria-label="Division of responsibility table, scrolls sideways on small screens"><table class="big">
+<thead><tr><th scope="col">Functional area</th><th scope="col">You, the brand owner</th><th scope="col">The co-packer’s team</th><th scope="col">Your legal counsel</th><th scope="col" class="me">Me: product spec and verification protocol</th><th scope="col" class="me">Me: on the floor</th></tr></thead>
+<tbody>
+<tr><th scope="row">Primary responsibility</th><td>Owns the recipe, the brand, and the final call on every lot.</td><td>Facility licensing and food safety operations.</td><td>The contract and how commercial risk is allocated.</td><td class="me">Whether the product looks, tastes, and smells the way you approved it.</td><td class="me">Whether it keeps doing so, batch after batch, and not just on the first run.</td></tr>
+<tr><th scope="row">Recipe and approved product</th><td>Owns the recipe and approves the reference product that sets the standard.</td><td>Produces to your recipe and its own process.</td><td>Protects your recipe and confidentiality in the agreement.</td><td class="me">Works from your approved finished product, not from your recipe.</td><td class="me">Compares each production run with that approved product.</td></tr>
+<tr><th scope="row">Food safety and regulatory</th><td>Engages its own regulatory advisor for destination-market rules, including whether the label meets destination-market law.</td><td>Owns the food safety plan, environmental monitoring, safety testing, and facility licensing.</td><td>Writes the factory’s regulatory obligations and indemnities into the agreement.</td><td class="na">&mdash;</td><td class="na">&mdash;</td></tr>
+<tr><th scope="row">Product spec</th><td>Approves the product spec.</td><td>Acknowledges the product spec and follows its standard operating procedures.</td><td>Incorporates the product spec as a binding warranty of product quality within the master agreement.</td><td class="me">Sets measurable ranges for your approved product (color, pH, Brix, viscosity, water activity, salinity, ABV where applicable, texture, fill weight, taste and smell) from baseline readings.</td><td class="me">Checks finished product against the spec with my own instruments, so you aren’t relying only on the plant’s own report.</td></tr>
+<tr><th scope="row">Packaging specification</th><td>Approves it, or hires a packaging consultant to write it.</td><td>States its packaging specs when I ask for them, if you use the plant’s own packaging.</td><td>Incorporates the packaging specification into the agreement.</td><td class="me">Records the packaging standard, from your consultant or the plant’s specs, so it can be inspected: print quality, ingredient list and allergen statement as printed against your approved artwork, barcode, lot codes, cartons, pallets.</td><td class="me">Checks printing, labels, cartons, and pallets against it on the line.</td></tr>
+<tr><th scope="row">Verification protocol</th><td>Approves the protocol.</td><td>Runs its own line measurements.</td><td>Incorporates the finished protocol into the agreement.</td><td class="me">Sets sampling plans, on-site test methods, and defect classes.</td><td class="me">Confirms agreed sampling and test methods are actually followed on the line, and runs the on-site checks myself.</td></tr>
+<tr><th scope="row">Rejections and corrective action</th><td>Makes the release, hold, rework, or reject decision.</td><td>Manages rework and scrap, and carries out corrective actions.</td><td>Drafts remedies and dispute terms for failed batches, including how a disputed reading is re-tested.</td><td class="me">Defines data-based rejection criteria and corrective action steps, with responsibilities assigned.</td><td class="me">Flags off-spec production before it ships, reports it to you, and follows each corrective action through to closure.</td></tr>
+<tr><th scope="row">Acceptance and payment</th><td>Releases payment against the technical acceptance criteria.</td><td>Supplies its own test data with each lot.</td><td>Drafts payment milestones and ties them directly to technical acceptance criteria.</td><td class="me">Defines acceptance criteria and the data that must accompany each lot.</td><td class="me">Compares the plant’s reported results with my own spot checks and flags any discrepancy before a payment milestone clears.</td></tr>
+<tr><th scope="row">Day-to-day quality issues</th><td>Receives the documented record and makes the calls.</td><td>Handles quality issues internally and reports them as it sees fit.</td><td>Relies on the documented record if a dispute arises.</td><td class="na">&mdash;</td><td class="me">Acts as your point of contact with the plant on quality, keeping a documented record of results.</td></tr>
+<tr><th scope="row">The agreement itself</th><td>Signs the agreement with the co-packer.</td><td>Signs the master services agreement.</td><td>Drafts contract terms: liability limits, payment schedules, and IP protection.</td><td class="me">Delivers the complete technical package (product spec and verification protocol, with your packaging specification attached) for counsel to incorporate.</td><td class="na">&mdash;</td></tr>
+</tbody></table></div>
+<h3 style="margin-top:22px">Where my role ends</h3>
+<ul class="plain"><li>I don’t write, change, or review your recipe.</li><li>I don’t draft legal terms or give legal advice.</li><li>I don’t set food safety limits or certify food safety.</li><li>I don’t engineer or redesign packaging, or certify that it will survive transit.</li><li>I don’t release or reject the lot. You decide.</li></ul>
+</div></section>
+
+<section id="spec"><div class="w">
+<h2>Product Spec: what goes in it</h2>
+<p style="max-width:720px">The baseline comes from your approved product. For color, water activity, pH, °Brix, salinity and, where applicable, ABV, an accredited lab takes every baseline reading, using the method defined for that product, so the standard rests on traceable numbers. I set the consistency and sensory baselines myself. Each parameter has a target value and a range, measured by a method written into the specification. Where a Codex Alimentarius standard exists for your category, I reference it when defining what the product is.</p>
+<p style="max-width:720px"><b>Initial ranges are time-boxed.</b> For the first commercial lots (for example, the first three, or the first run if you produce less often), the ranges are outer limits and never loosen. After those lots they tighten by a method agreed in advance, such as recalculating from the first lots’ data with a maximum width. The tightened ranges take effect automatically, with no renegotiation. The target value stays fixed, and my reports track where each lot lands inside its range, so a plant drifting toward the loose edge is flagged even while lots still pass. Your counsel writes the automatic-tightening clause into the agreement.</p>
+<p style="max-width:720px"><b>Taste and smell</b> are defined by a retained sealed reference sample and a short flavor profile written with you (aroma, main flavor notes, balance, texture, finish), built using ISO sensory analysis methods, plus a zero-tolerance list of named off-notes: burnt or scorched, metallic, rancid, fermented, bitter.</p>
+<h3 style="margin-top:20px">What stays out of the Product Spec</h3>
+<div class="tw"><table><thead><tr><th>Item</th><th>Where it lives</th><th>Owner</th></tr></thead><tbody>
+<tr><td>Allergens and cross-contact</td><td>The plant’s food safety system. The allergen statement as printed is checked against your approved artwork through the Packaging Specification.</td><td>Co-packer; you for the label</td></tr>
+<tr><td>Contaminants (heavy metals, mycotoxins, pesticide residues)</td><td>Your regulatory requirements.</td><td>Your regulatory advisor</td></tr>
+<tr><td>Microbiology</td><td>The plant controls it.</td><td>Co-packer</td></tr>
+<tr><td>Additives, colorants, destination-market labeling rules</td><td>Your regulatory compliance.</td><td>You</td></tr>
+<tr><td>Traceability and lot coding</td><td>Lot code format in the Packaging Specification; traceability duties in the agreement.</td><td>You and the co-packer</td></tr>
+<tr><td>Per-lot test data, retained samples, change control, recalls, consequences</td><td>Master Quality Agreement.</td><td>Your counsel</td></tr>
+</tbody></table></div>
+</div></section>
+
+<section id="packaging"><div class="w">
+<h2>Packaging Specification: two ways to build it</h2>
+<div class="grid">
+<div class="card"><h3>Path 1: you have a packaging consultant</h3><p>Your consultant writes the Packaging Specification and you approve it. I turn it into inspection checks and inspect against the consultant’s standard.</p></div>
+<div class="card"><h3>Path 2: you use the co-packer’s packaging</h3><p>The plant states what it can do, and I record it as the Packaging Specification: seal, cap torque, carton strength, pallet pattern, artwork, barcode. I run a light document check, not an engineering review, covering food-contact materials, supplier test data for the carton and pallet, and whether your shipping route calls for a packaging consultant or a transit test. You approve it before it becomes the standard.</p></div>
+</div>
+<p style="max-width:720px;margin-top:14px">The contents cover the primary pack and seal, closure and cap torque, label and artwork (including print quality, smearing, misprints and color against the approved artwork), ingredient list and allergen statement as printed, net contents and claims as approved, barcode, lot and date code, master carton, and pallet pattern and wrap. I check that what is printed matches the artwork you approved. Whether the label is legally compliant is for your regulatory advisor. For a long or rough shipping route, I recommend a packaging consultant or a transit test, and your counsel should decide in the agreement who carries the risk if packaging fails in transit.</p>
+</div></section>
+
+<section id="verification"><div class="w">
+<h2>Verification Protocol: what I check and how</h2>
+<p style="max-width:720px">The lab takes the baseline readings once, when the Product Spec is set. At each inspection, my on-site readings are checked against those baseline ranges. My instrument calibration records are kept and available to you, and I check any instrument I don’t own before I accept its readings. Sampling uses AQL under ISO 2859-1 (US equivalent ANSI/ASQ Z1.4), with limits set by lot size and product risk.</p>
+<div class="tw"><table><thead><tr><th>Check</th><th>Baseline</th><th>How it is done on site</th></tr></thead><tbody>
+<tr><td>Color, °Brix, pH, water activity, salinity, ABV where applicable</td><td>Accredited lab readings on your approved product; ranges set from the results.</td><td>My own instruments: color per the product’s defined method after a calibration check, refractometer, pH meter, water activity meter, salinity and ABV per the defined method.</td></tr>
+<tr><td>Consistency</td><td>My baseline readings on your approved product.</td><td>Bostwick consistometer.</td></tr>
+<tr><td>Fill, seals, leaks, visual</td><td>Your declared fill and the approved product.</td><td>Fill check; visual and handling checks for specks, gloss, separation, seals, and leaks.</td></tr>
+<tr><td>Taste and smell</td><td>Retained sealed reference, a flavor profile written with you, and named off-notes.</td><td>Side by side with the reference; blind panel for quality calls.</td></tr>
+<tr><td>Labels, printing, barcode, lot and date codes</td><td>Approved artwork in the Packaging Specification.</td><td>Compared with the approved artwork; ingredient list and allergen statement read against it; barcode scanned; printing errors recorded with photos.</td></tr>
+<tr><td>Cartons, pallets, foreign matter</td><td>Packaging Specification.</td><td>Checked against the spec; visual.</td></tr>
+</tbody></table></div>
+<h3 style="margin-top:20px">How a taste or smell call is made</h3>
+<p style="max-width:720px">I smell first, and I never taste a sample that is swollen, leaking, or smells fermented or chemical. Spoilage and contamination off-notes (rancid, fermented, moldy, chemical or machine oil) are not put to a vote: I report and escalate immediately and hold the lot. Quality calls (burnt or scorched, metallic, bitter, clearly off the reference) are made by a blind side-by-side comparison with the retained reference, by at least two tasters including the plant’s QA person. A triangle test, where tasters pick the odd sample out of three, shows whether the production sample is reliably different. A quality hold never rests on my palate alone. If the panel can’t agree, I give you the findings and the retained sample, and you decide.</p>
+<h3 style="margin-top:20px">Defect classes</h3>
+<div class="tw"><table><thead><tr><th>Class</th><th>Examples</th><th>What happens</th></tr></thead><tbody>
+<tr><td>Critical</td><td>Visible foreign matter; leaks, seal failures, or swollen packs; wrong product or wrong pack; missing or wrong allergen statement; spoilage or contamination off-notes; any reading outside the plant’s own validated safety limit.</td><td>I stop and report to you immediately. Lot on hold.</td></tr>
+<tr><td>Major</td><td>°Brix, pH, water activity, salinity, ABV, color, or consistency out of range; quality off-notes confirmed by the blind panel; fill out of range; printing errors or wrong claims on the label; wrong or unscannable barcode; unreadable lot or date code; crushed cartons; unstable pallet.</td><td>Counts against the AQL. A failed lot is held or rejected at your decision.</td></tr>
+<tr><td>Minor</td><td>Slight label tilt; small cosmetic print flaws; smudged but legible date code; scuffed master cartons.</td><td>Counts against the AQL. Noted in the report.</td></tr>
+</tbody></table></div>
+<h3 style="margin-top:20px">If a reading is disputed</h3>
+<p style="max-width:720px">The first step is to measure the same sample side by side with the plant and compare calibration records. If it is still disputed, a retained split sample goes to a pre-agreed accredited lab, which measures it using the method named in the agreement. The binding terms, who pays for the lab, and the timing belong in the agreement your counsel writes. The plant keeps sealed retains of each lot, with the number and time set in the agreement. At each inspection I also take one tamper-sealed sample, log it, and hold it, so a dispute sample never rests only on the plant’s own storage.</p>
+</div></section>
+
+<section id="safety"><div class="w">
+<h2>The food safety boundary</h2>
+<p style="max-width:720px">The plant controls food safety. This is who owns each part, and where I come in.</p>
+<div class="tw"><table><thead><tr><th>Item</th><th>Owner</th><th>Where I come in</th></tr></thead><tbody>
+<tr><td>Hazard analysis and process controls (HACCP)</td><td>Co-packer</td><td>I report and escalate anything safety-related that I see on site.</td></tr>
+<tr><td>Process validation, including thermal process</td><td>Co-packer and its process authority</td><td>The validated process sets the limits I compare readings against.</td></tr>
+<tr><td>Safety limits, such as a maximum pH or water activity</td><td>The plant’s validated process, or your regulatory advisor</td><td>I record them as supplied, compare readings to them, and report and escalate anything outside.</td></tr>
+<tr><td>Microbiological control</td><td>Co-packer</td><td>The plant controls it through its process.</td></tr>
+<tr><td>Destination-market compliance and label legality</td><td>Your regulatory advisor</td><td>I check that print matches your approved artwork. Whether the label is legally compliant is for your advisor.</td></tr>
+<tr><td>Records check, when I see red flags</td><td>Me (screening only)</td><td>I review key food safety records as a risk-lowering screen and report what I find. If concerns arise, I recommend a third-party food safety audit.</td></tr>
+</tbody></table></div>
+</div></section>
+
+<section id="process"><div class="w">
+<h2>How an engagement runs</h2>
+<ol class="steps">
+<li><b>Baseline</b>You provide your approved product. An accredited lab takes baseline readings. I take the consistency baseline, write the flavor profile with you, retain the taste and smell reference, set the ranges, and define the method for each attribute. This produces the Product Spec.</li>
+<li><b>Packaging</b>Path 1 (your consultant writes it) or Path 2 (the plant states its specs and I record them). You approve. This produces the Packaging Specification.</li>
+<li><b>Protocol</b>I write the Verification Protocol from the first two documents: instruments, on-site checks, AQL sampling, defect classes.</li>
+<li><b>Agreement</b>You and your counsel attach the three documents to the Master Quality Agreement.</li>
+<li><b>Inspect</b>I check each production run, scheduled or unannounced, and report with readings and photos. You decide to release, hold, rework, or reject.</li>
+<li><b>Review drift</b>After the first lots the ranges tighten by the method agreed in advance. I also update the documents through change control.</li>
+</ol>
+</div></section>
+
+<section><div class="w"><div class="cta">
+<h2>Not sure your current specs would hold up?</h2>
+<p>Send me your spec sheet, inspection checklist, or whatever you have, and I’ll show you where it leaves room for guesswork.</p>
+<a class="btn" href="contact.html">Request a QA scope review</a>
+</div></div></section>
+</main>
+<footer><div class="w">Mekong Quality Assurance Advisory &middot; mekongqa.com</div></footer>
+<script>
+document.getElementById('mb').addEventListener('click',function(){var o=document.getElementById('nav').classList.toggle('open');this.setAttribute('aria-expanded',o)});
+</script>
+</body>
+</html>
