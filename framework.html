@@ -62,7 +62,7 @@ ul.plain{margin:0 0 12px;padding-left:20px;color:var(--mu);font-size:15px}
 .cta .btn{background:var(--bg);color:var(--tx)!important}
 footer{padding:26px 0;border-top:1px solid var(--ln);font-size:13px;color:var(--mu);text-align:center}
 .flow{display:grid;gap:8px;max-width:820px}.frow{display:grid;gap:8px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}.fb{display:block;border:1px solid;border-radius:10px;padding:12px 16px;text-decoration:none;color:var(--tx)}.fb b{display:block;font-size:15px}.fb span{font-size:13px;color:var(--mu)}.fb.me{background:var(--teb);border-color:var(--te)}.fb.you{background:var(--amb);border-color:var(--am)}.fb.pl{background:var(--gr);border-color:var(--ln)}.fa{text-align:center;color:var(--mu);font-size:13px;margin:0}.legend{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 16px}.lg{font-size:12px;padding:4px 10px;border-radius:6px;border:1px solid}.lg.me{background:var(--teb);border-color:var(--te)}.lg.you{background:var(--amb);border-color:var(--am)}.lg.pl{background:var(--gr);border-color:var(--ln)}:root{--am:#946510;--amb:#fbf0d9}@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--am:#e3b562;--amb:#33290f}}:root[data-theme="dark"]{--am:#e3b562;--amb:#33290f}
-</style>
+.flow{max-width:none}.frow{grid-template-columns:repeat(auto-fit,minmax(270px,1fr));align-items:start}.fb em{display:block;font-size:12px;font-style:normal;color:var(--mu);margin-bottom:6px}.fb ul{margin:6px 0 8px;padding-left:18px;font-size:13px;color:var(--mu)}.fb .sub{font-size:13px;font-weight:700;margin:8px 0 0}.fb .dp{font-size:12px;font-weight:700;color:var(--te);margin:6px 0 0}.fb b a{color:inherit;text-decoration:none}</style>
 </head>
 <body>
 <header><div class="w">
@@ -81,21 +81,22 @@ footer{padding:26px 0;border-top:1px solid var(--ln);font-size:13px;color:var(--
 <section id="picture"><div class="w"><h2>The big picture</h2>
 <p class="legend"><span class="lg me">I write it or carry it out</span><span class="lg you">You own or approve it</span><span class="lg pl">The plant or your regulatory advisor</span></p>
 <div class="flow">
-<a class="fb you" href="#documents"><b>Master Quality Agreement</b><span>Owned by you and your counsel. It makes the three documents below binding.</span></a>
+<div class="fb you"><b>Master Quality Agreement</b><span>Owned by you and your counsel</span><ul><li>Makes the three documents below binding</li><li>Holds consequences of failure (reject, retest, hold), change control, per-lot test data, retained samples, traceability, recalls</li></ul><p class="dp">Drift prevented: nothing makes the plant answerable when a lot fails.</p></div>
 <p class="fa">&darr; attaches</p>
 <div class="frow">
-<a class="fb me" href="#spec"><b>Product Spec</b><span>I write it, you approve</span></a>
-<a class="fb you" href="#packaging"><b>Packaging Specification</b><span>You own the standard, I record it</span></a>
-<a class="fb me" href="#verification"><b>Verification Protocol</b><span>I write it and carry it out</span></a>
+<a class="fb me" href="#spec"><b>Product Spec</b><span>I write it; you approve. The food: quality and consistency (safety limits are not set here)</span><ul><li>Color, °Brix, pH, water activity, salinity and ABV (where applicable): lab baselines, set as ranges</li><li>Bostwick consistency, fill, visual (specks, gloss, separation)</li><li>Taste and smell against a retained reference sample and a short flavor profile</li><li>Named off-notes, zero tolerance: burnt, metallic, rancid, fermented</li><li>Each attribute measured by a method defined for your product</li><li>Initial ranges tighten by an agreed rule after the first lots</li></ul><p class="dp">Built from your approved product, not your recipe. Drift prevented: the product slowly moving away from the original.</p></a>
+<a class="fb you" href="#packaging"><b>Packaging Specification</b><span>You own the standard; I record it. The pack: bottle, closure, label, carton, pallet</span><ul><li>Path 1: your packaging consultant writes it</li><li>Path 2: the plant states its specs, I record them, you approve</li><li>Pack and seal, cap torque, cartons, pallet pattern and wrap</li><li>Print quality and printing errors; barcode; lot and date code</li><li>Ingredient list and allergen statement as printed, matched to your approved artwork (legal compliance is for your advisor)</li><li>Light document check; not a structural engineering review</li></ul><p class="dp">Drift prevented: quiet changes in materials, print, and pallets.</p></a>
 </div>
-<p class="fa">&darr; checked by</p>
+<p class="fa">&darr; checked by the</p>
+<div class="fb me"><b>Verification Protocol</b><span>I write it and carry it out</span></div>
 <div class="frow">
-<a class="fb me" href="#verification"><b>On site</b><span>My instruments, AQL sampling, blind panel</span></a>
-<a class="fb me" href="#verification"><b>Accredited lab</b><span>Baselines and disputed readings</span></a>
+<a class="fb me" href="#verification"><b>On site, with my own instruments</b><ul><li>Bostwick consistometer, refractometer (°Brix), pH meter, water activity meter; salinity and ABV (where applicable) per the product’s defined method</li><li>Color: per the product’s defined method, after a calibration check</li><li>Taste and smell against the reference; blind panel for quality calls</li><li>Fill, seals, labels, print, codes; cartons, pallets, foreign matter</li><li>AQL sampling (ISO 2859-1; US equivalent ANSI/ASQ Z1.4); critical, major, and minor defects</li></ul></a>
+<a class="fb me" href="#verification"><b>Accredited lab: baselines and disputes</b><ul><li>Baseline readings when the Product Spec is set: color, water activity, pH, °Brix, salinity, ABV (where applicable)</li><li>Disputed readings: retained split sample to a pre-agreed lab</li><li>I collect, seal, ship, and track every sample; the lab tests; results are reported against your specification</li><li>One tamper-sealed sample kept from each inspection</li></ul></a>
 </div>
 <p class="fa">&darr; report to you</p>
+<div class="fb me"><b>Inspection report to you, with readings and photos</b></div>
 <div class="fb you"><b>You decide</b><span>Release, hold, rework, or reject</span></div>
-<a class="fb pl" href="#safety"><b>Food safety</b><span>Owned by the plant and your regulatory advisor</span></a>
+<a class="fb pl" href="#safety"><b>Food safety: owned by the plant and your regulatory advisor</b><ul><li>HACCP, process validation, certification, label legality</li><li>If I see red flags, I review key records and report and escalate</li></ul></a>
 </div></div></section>
 <section id="documents"><div class="w">
 <h2>The four documents at a glance</h2>
@@ -193,12 +194,12 @@ footer{padding:26px 0;border-top:1px solid var(--ln);font-size:13px;color:var(--
 <section id="process"><div class="w">
 <h2>How an engagement runs</h2>
 <ol class="steps">
-<li><b>Baseline</b>You provide your approved product. An accredited lab takes baseline readings. I take the consistency baseline, write the flavor profile with you, retain the taste and smell reference, set the ranges, and define the method for each attribute. This produces the Product Spec.</li>
-<li><b>Packaging</b>Path 1 (your consultant writes it) or Path 2 (the plant states its specs and I record them). You approve. This produces the Packaging Specification.</li>
-<li><b>Protocol</b>I write the Verification Protocol from the first two documents: instruments, on-site checks, AQL sampling, defect classes.</li>
-<li><b>Agreement</b>You and your counsel attach the three documents to the Master Quality Agreement.</li>
-<li><b>Inspect</b>I check each production run, scheduled or unannounced, and report with readings and photos. You decide to release, hold, rework, or reject.</li>
-<li><b>Review drift</b>After the first lots the ranges tighten by the method agreed in advance. I also update the documents through change control.</li>
+<li><b>Baseline</b>You get numbers, not opinions. You provide your approved product. An accredited lab takes baseline readings. I take the consistency baseline, write the flavor profile with you, retain the taste and smell reference, set the ranges, and define the method for each attribute. This produces the Product Spec.</li>
+<li><b>Packaging</b>You get a written pack standard. Path 1 (your consultant writes it) or Path 2 (the plant states its specs and I record them). You approve. This produces the Packaging Specification.</li>
+<li><b>Protocol</b>You get the method for every run. I write the Verification Protocol from the first two documents: instruments, on-site checks, AQL sampling, defect classes.</li>
+<li><b>Agreement</b>You get enforceable terms. You and your counsel attach the three documents to the Master Quality Agreement.</li>
+<li><b>Inspect</b>You get a report after every run. I check each production run, scheduled or unannounced, and report with readings and photos. You decide to release, hold, rework, or reject.</li>
+<li><b>Review drift</b>You get tighter ranges over time. After the first lots the ranges tighten by the method agreed in advance. I also update the documents through change control.</li>
 </ol>
 </div></section>
 
